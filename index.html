@@ -8,14 +8,15 @@
 	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-	<title>Projeto Idade</title>
+	<title>Dias Contados</title>
 </head>
 <body>
 	<div id="animacao">
 	<div id="container">
-	<h1>Ano por Idade</h1>
-	<p id="little-txt">coloque o ano que você nasceu na caixinha abaixo.</p>
- <input type="number" name="ano" id="ano" placeholder="Digite aqui"/>
+	<h1>Quantos dias você ja viveu?</h1>
+	<p id="little-txt">Coloque sua data de nascimento na caixinha abaixo.</p>
+	<input type="date" name="data" id="data"/>
+ 
  <button id="enviar" onclick="clicar()">Enviar</button>
  <div id="caixa">
  	<h2>RESULTADO</h2>
@@ -26,13 +27,14 @@
 	
 	<script type="text/javascript" charset="utf-8">
 	function clicar() {
-		let input = document.getElementById('ano')
-		let n1 = 2023
-		let n2 = ano.value
-		let subtrair = n1 - n2
-		let res = document.getElementById('res')
+		let input = document.getElementById('data')
+		let dataDeNascimento = new Date(data.value)
+		let dataAtual = new Date()
+		let diferenca = dataAtual - dataDeNascimento
+		let diasVividos = Math.floor(diferenca / (1000 * 60 * 60 * 24))
+		console.log(diasVividos)
 		
-		res.innerHTML = `<strong>Você tem ou irá completar ${subtrair} anos!</strong>`
+		res.innerHTML = `<strong>Você viveu ${diasVividos} dias!</strong>`
 	}
 	</script>
 </body>
