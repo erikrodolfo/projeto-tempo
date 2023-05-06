@@ -52,6 +52,7 @@ input {
 	width: 100px;
 	margin: 10px 0 20px 0;
 	padding: 7px;
+	cursor: pointer;
 }
 
 ::placeholder {
@@ -67,6 +68,7 @@ button {
 	border: 2px solid #020850;
 	border-radius: 0 10px 0 0;
 	padding: 7px;
+	cursor: pointer;
 }
 
 #caixa {
