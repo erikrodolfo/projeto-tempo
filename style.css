@@ -23,7 +23,6 @@ body {
 #container {
 	background-image: linear-gradient(#068aed, #0371c4);
 	background: none;
-	height: 300px;
   width: 300px;
   border: 3px solid #020850;
   border-radius: 10px;
@@ -32,6 +31,7 @@ body {
 
 h1 {
 	margin: 20px 10px 20px 10px;
+	font-size: 1.7em;
 	font-weight: bolder;
 }
 
@@ -49,7 +49,7 @@ input {
 	outline: none;
 	border: 1.5px solid #020850;
 	border-radius: 0 0 0 10px;
-	width: 70px;
+	width: 100px;
 	margin: 10px 0 20px 0;
 	padding: 7px;
 }
@@ -64,7 +64,7 @@ button {
 	color: #0cc1ed;
 	font-weight: bold;
 	border: none;
-	border: 1.5px solid #020850;
+	border: 2px solid #020850;
 	border-radius: 0 10px 0 0;
 	padding: 7px;
 }
