@@ -12,6 +12,7 @@ body {
 	25%, #0cc1ed 50%, #009dd4 75%, #007fc0 100%);
 	background-size: 300% 300%;
 	background-position: center center;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,6 +88,18 @@ h2 {
 
 #res {
 	margin-top: 20px;
+}
+
+footer {
+	background-color: #020850;
+	color: #0cc1ed;
+	text-align: center;
+	font-weight: bolder;
+	padding: 4px;
+	width: 100vw;
+	position: absolute;
+	top: 100%;
+  
 }
 
 @keyframes gradient {
