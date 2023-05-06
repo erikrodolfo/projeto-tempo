@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+	<title>Descubra sua idade</title>
+</head>
+<body>
+	<div id="animacao">
+	<div id="container">
+	<h1>Qual sua idade?</h1>
+	<p id="little-txt">coloque o ano que você nasceu na caixinha abaixo.</p>
+ <input type="number" name="ano" id="ano" placeholder="Digite aqui"/>
+ <button id="enviar" onclick="clicar()">Enviar</button>
+ <div id="caixa">
+ 	<h2>RESULTADO</h2>
+ 		<p id="res"> </p>
+ </div>
+	</div>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+	function clicar() {
+		let input = document.getElementById('ano')
+		let n1 = 2023
+		let n2 = ano.value
+		let subtrair = n1 - n2
+		let res = document.getElementById('res')
+		
+		res.innerHTML = `<strong>Você tem ou irá completar ${subtrair} anos!</strong>`
+	}
+	</script>
+</body>
+</html>

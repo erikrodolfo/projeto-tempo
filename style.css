@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+body {
+	animation: gradient 10s ease infinite alternate;
+  background-image: linear-gradient(100deg, #aeffff 0, #78e6ff
+	25%, #0cc1ed 50%, #009dd4 75%, #007fc0 100%);
+	background-size: 300% 300%;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #020850;
+	height: 100vh;
+	width: 100vw;
+}
+
+#container {
+	background-image: linear-gradient(#068aed, #0371c4);
+	background: none;
+	height: 300px;
+  width: 300px;
+  border: 3px solid #020850;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+	margin: 20px 10px 20px 10px;
+	font-weight: bolder;
+}
+
+#little-txt {
+	margin: 10px 10px 20px 10px;
+	font-weight: bold;
+}
+
+input {
+	background: transparent;
+	color: #020850;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	outline: none;
+	border: 1.5px solid #020850;
+	border-radius: 0 0 0 10px;
+	width: 70px;
+	margin: 10px 0 20px 0;
+	padding: 7px;
+}
+
+::placeholder {
+	color: #02085094;
+	text-align: center;
+}
+
+button {
+	background-color: #020850;
+	color: #0cc1ed;
+	font-weight: bold;
+	border: none;
+	border: 1.5px solid #020850;
+	border-radius: 0 10px 0 0;
+	padding: 7px;
+}
+
+#caixa {
+	border: 1.5px solid #020850;
+	border-radius: 10px;
+	margin: 10px;
+	height: 80px;
+}
+
+h2 {
+	background-color: #020850;
+	color: #0cc1ed;
+	border-radius: 8px 8px 0 0;
+	font-size: 1em;
+}
+
+#res {
+	margin-top: 20px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0 50%;
+	}
+	
+	50% {
+		background-position: 100% 50%;
+	}
+	
+	100% {
+		background-position: 0 50%;
+	}
+}
