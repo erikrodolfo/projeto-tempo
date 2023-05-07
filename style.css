@@ -2,7 +2,7 @@
 
 /* Configurações gerais */
 * {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	font-family: Arial, Helvetica, Sans-Serif;
 }
@@ -14,13 +14,15 @@ body {
 	25%, #0cc1ed 50%, #009dd4 75%, #007fc0 100%);
 	background-size: 300% 300%;
 	background-position: center center;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	color: #020850;
 	height: 100vh;
 	width: 100vw;
+}
+
+header {
+	background-color: #020850;
+	color: #e6e6e6;
+	text-align: center;
 }
 
 #container {
@@ -29,15 +31,19 @@ body {
   border: 3px solid #020850;
   border-radius: 10px;
   text-align: center;
+  margin-top: 50px;
 }
 
 h1 {
-	margin: 20px 10px 20px 10px;
 	font-size: 1.7em;
 	font-weight: bolder;
 }
 
-#little-txt {
+#p1 {
+	display: block;
+}
+
+#p2 {
 	margin: 10px 10px 20px 10px;
 	font-weight: bold;
 }
