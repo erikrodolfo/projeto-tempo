@@ -13,9 +13,9 @@
 <body>
 	<div id="animacao">
 	<div id="container">
-	<h1>Quantos dias você ja viveu?</h1>
+	<h1></h1>
 	<p id="little-txt">Coloque sua data de nascimento na caixinha abaixo.</p>
-	<i class="fas fa-angle-right"></i>
+	<input type="text" value="Data" disabled="on"/>
 	<input type="date" name="data" id="data"/>
  
  <button id="enviar" onclick="clicar()">Enviar</button>
@@ -35,11 +35,26 @@
 		let input = document.getElementById('data')
 		let dataDeNascimento = new Date(data.value)
 		let dataAtual = new Date()
-		let diferenca = dataAtual - dataDeNascimento
-		let diasVividos = Math.floor(diferenca / (1000 * 60 * 60 * 24))
-		console.log(diasVividos)
 		
-		res.innerHTML = `<strong>Você possui ${diasVividos} dias de vida!</strong>`
+		//dias vividos
+		let diferencaDias = dataAtual - dataDeNascimento
+		let diasVividos = Math.floor(diferencaDias / (1000 * 60 * 60 * 24))
+		
+		//horas vividas
+		let diferencaHoras = dataAtual.getTime() - dataDeNascimento.getTime()
+		let horasVividas = Math.floor(diferencaHoras / (1000 * 60 * 60))
+		
+		//minutos vividos
+		let diferencaMin = dataAtual.getTime() - dataDeNascimento.getTime()
+		let minutosVividos = Math.floor(diferencaMin / (1000 * 60))
+		
+		//segundos vividos
+		let diferencaSeg = dataAtual.getTime() - dataDeNascimento.getTime()
+		let segundosVividos = Math.floor(diferencaSeg / (1000))
+		
+		setInterval(clicar, 1000)
+		
+		res.innerHTML = `<strong>Você possui:<br> ${diasVividos} dias de vida!<br> ${horasVividas} horas de vida<br> ${minutosVividos} minutos de vida<br> ${segundosVividos} segundos de vida</strong>`
 	}
 	</script>
 </body>
