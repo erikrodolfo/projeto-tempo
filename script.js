@@ -1,4 +1,4 @@
-function clicar() {
+function calcTempo() {
 		
 		let input = document.getElementById('data')
 		let dataDeNascimento = new Date(data.value)
@@ -28,7 +28,7 @@ function clicar() {
 		let diferencaSeg = dataAtual.getTime() - dataDeNascimento.getTime()
 		let segundosVividos = Math.floor(diferencaSeg / (1000))
 		
-		setInterval(clicar, 1000)
+		setInterval(calcTempo, 1000)
 		
 		res.innerHTML = 
 		`<strong>
