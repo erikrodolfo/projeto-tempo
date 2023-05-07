@@ -21,7 +21,7 @@
  <button id="enviar" onclick="clicar()">Enviar</button>
  <div id="caixa">
  	<h2>RESULTADO</h2>
- 	<h3>Desde o seu nascimento se passaram:</h3>
+ 	<h3>Desde o seu nascimento se passaram aproximadamente:</h3>
  		<p id="res">
  			
  		</p>
@@ -67,12 +67,12 @@
 		setInterval(clicar, 1000)
 		
 		res.innerHTML = `<strong>
-		  ${mesesVividos} Meses<br>
-		  ${semanasVividas} semanas<br>
-			${diasVividos} dias<br> 
-			${horasVividas} horas<br> 
-			${minutosVividos} minutos<br> 
-			${segundosVividos} segundos</strong>`
+		  ${mesesVividos.toLocaleString()} Meses<br>
+		  ${semanasVividas.toLocaleString()} semanas<br>
+			${diasVividos.toLocaleString()} dias<br> 
+			${horasVividas.toLocaleString()} horas<br> 
+			${minutosVividos.toLocaleString()} minutos<br> 
+			${segundosVividos.toLocaleString()} segundos</strong>`
 	}
 	</script>
 </body>
