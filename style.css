@@ -94,7 +94,8 @@ h2 {
 }
 
 h3 {
-	font-size: 1em;
+	font-size: 12px;
+	border-bottom: 1px solid #020850;
 }
 
 #res {
