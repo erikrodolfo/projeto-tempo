@@ -44,8 +44,7 @@ h1 {
 
 /* inputs & button */
 :disabled {
-	background-color: #020850;
-	color: #0cc1ed;
+	
 	width: 39px;
 	border-radius: 0 0 0 10px;
 }
@@ -97,7 +96,6 @@ h2 {
 
 #res {
 	margin: 10px;
-	text-align: justify;
 }
 
 footer {
