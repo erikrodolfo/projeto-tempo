@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
+/* Configurações gerais */
 * {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, Sans-Serif;
 }
 
+/* Configurações do corpo */
 body {
-	animation: gradient 10s ease infinite alternate;
+	animation: gradient 7s ease-in-out infinite alternate;
   background-image: linear-gradient(100deg, #aeffff 0, #78e6ff
 	25%, #0cc1ed 50%, #009dd4 75%, #007fc0 100%);
 	background-size: 300% 300%;
@@ -22,9 +24,8 @@ body {
 }
 
 #container {
-	background-image: linear-gradient(#068aed, #0371c4);
 	background: none;
-  width: 300px;
+  width: 350px;
   border: 3px solid #020850;
   border-radius: 10px;
   text-align: center;
@@ -41,6 +42,14 @@ h1 {
 	font-weight: bold;
 }
 
+/* inputs & button */
+:disabled {
+	background-color: #020850;
+	color: #0cc1ed;
+	width: 39px;
+	border-radius: 0 0 0 10px;
+}
+
 input {
 	background: transparent;
 	color: #020850;
@@ -49,7 +58,6 @@ input {
 	border: none;
 	outline: none;
 	border: 1.5px solid #020850;
-	border-radius: 0 0 0 10px;
 	width: 100px;
 	margin: 10px 0 20px 0;
 	padding: 7px;
@@ -72,11 +80,12 @@ button {
 	cursor: pointer;
 }
 
+/* Configurações do resultado */
 #caixa {
 	border: 1.5px solid #020850;
 	border-radius: 10px;
 	margin: 10px;
-	height: 80px;
+	min-height: 80px;
 }
 
 h2 {
@@ -87,7 +96,8 @@ h2 {
 }
 
 #res {
-	margin-top: 20px;
+	margin: 10px;
+	text-align: justify;
 }
 
 footer {
@@ -98,8 +108,7 @@ footer {
 	padding: 4px;
 	width: 100vw;
 	position: absolute;
-	top: 100%;
-  
+	top: 101%;
 }
 
 @keyframes gradient {
