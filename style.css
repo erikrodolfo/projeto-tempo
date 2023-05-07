@@ -44,7 +44,6 @@ h1 {
 
 /* inputs & button */
 :disabled {
-	
 	width: 39px;
 	border-radius: 0 0 0 10px;
 }
@@ -91,6 +90,10 @@ h2 {
 	background-color: #020850;
 	color: #0cc1ed;
 	border-radius: 8px 8px 0 0;
+	font-size: 1em;
+}
+
+h3 {
 	font-size: 1em;
 }
 
