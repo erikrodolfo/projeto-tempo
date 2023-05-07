@@ -35,9 +35,14 @@
 	
 	<script type="text/javascript" charset="utf-8">
 	function clicar() {
+		
 		let input = document.getElementById('data')
 		let dataDeNascimento = new Date(data.value)
 		let dataAtual = new Date()
+		
+		//semanas vividas
+		let diferencaSem = dataAtual - dataDeNascimento
+		let semanasVividas = Math.floor(diferencaSem / (1000 * 60 * 60 * 24 * 7))
 		
 		//dias vividos
 		let diferencaDias = dataAtual - dataDeNascimento
@@ -57,7 +62,11 @@
 		
 		setInterval(clicar, 1000)
 		
-		res.innerHTML = `<strong>Você possui:<br> ${diasVividos} dias de vida!<br> ${horasVividas} horas de vida<br> ${minutosVividos} minutos de vida<br> ${segundosVividos} segundos de vida</strong>`
+		res.innerHTML = `<strong>
+			${diasVividos} dias<br> 
+			${horasVividas} horas<br> 
+			${minutosVividos} minutos<br> 
+			${segundosVividos} segundos</strong>`
 	}
 	</script>
 </body>
