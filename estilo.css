@@ -6,7 +6,8 @@
 	/* paleta de cores */
 	--lightred: #f64348;
 	--red: #BF0000;
-	--black: #1f1f1f;
+	--black01: #1b1b1b;
+	--black02: #1f1f1f;
 	--gray: #343434;
 	--lightgray: #898989;
 	--white: #e5e5e5;
@@ -23,7 +24,7 @@
 }
 
 body {
-	background: var(--black) no-repeat;
+	background: var(--black02) no-repeat;
 	color: var(--white);
 	font-family: var(--fonte-p);
 	text-align: center;
@@ -32,8 +33,10 @@ body {
 }
 
 header {
+	background-color: var(--black01);
 	padding: 10px;
 	text-align: center;
+	
 }
 
 header > h1 {
@@ -49,6 +52,10 @@ header > p {
 	font-size: 14px;
 }
 
+nav {
+	background-color: var(--lightred);
+	padding: 10px;
+}
 
 #container {
 	margin-top: 30px;
