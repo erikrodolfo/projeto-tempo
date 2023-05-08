@@ -5,38 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="estilo.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
  <script type="text/javascript" charset="utf-8" src="script.js"></script>
-	<title>Calcule seu tempo de vida até hoje</title>
+	<title>Calculo do Tempo</title>
 </head>
 <body>
 	  <!-- Cabeçalho -->
 		<header>
-			<h1>Quanto tempo você ja viveu?</h1>
-		<p id="p1"><small>descubra quantos meses, semanas, dias, horas, minutos e segundos você ja viveu até agora.</small></p>
+			<h1>QUANTO TEMPO VOCÊ JÁ VIVEU?</h1>
+		<p><small>Descubra quantos meses, semanas, dias, horas, minutos e segundos você já viveu até agora</small></p>
 		</header>
 		<!-- Conteúdo principal -->
 		<main>
 			<!-- Container com os inputs e etc. -->
 	<section id="container">
-		<p id="p2">Coloque sua data de nascimento na caixinha abaixo.</p>
-	<input type="text" value="Data" disabled="on"/>
-	<input type="date" name="data" id="data"/>
+		<p>Selecione a data e a hora do seu nascimento</p>
+		<p id="aviso">
+			Caso não saiba a hora, coloque 00:00 que o resultado será o numero inteiro mais próximo
+		</p>
+		<img id="arrow" src="imagens/down-arrow-backup-2-svgrepo-com.svg" alt="Down arrow" width="30"/>
+	<input type="datetime-local" name="data" id="data"/>
  <button id="enviar" onclick="calcTempo()">Enviar</button>
 	</section>
 	
  <div id="caixa">
  	<h2>RESULTADO</h2>
- 	<h3>Desde o seu nascimento se passaram aproximadamente:</h3>
- 	<strong>
- 		<ul id="res">
+ 	<h3>Desde o seu nascimento se já passaram:</h3>
+ 
+ 	<p>Período</p>
+ 		<ul class="res">
+ 			<li id="nasc"><!-- data de nascimento --></li>
  			<li id="mes"><!-- meses --></li>
  			<li id="sem"><!-- semanas --></li>
  			<li id="dia"><!-- dias --></li>
+ 		 </ul>
+ 		 
+ <span class="material-symbols-outlined">
+schedule
+</span>		
+ 	<p>Tempo</p>		
+ 	 <ul class="res">
  			<li id="hora"><!-- horas --></li>
  			<li id="min"><!-- minutos --></li>
  			<li id="seg"><!-- segundos --></li>
  		</ul>
- 	</strong>
+
  </div>
 </main>
 	<footer>
