@@ -4,6 +4,9 @@ function calcTempo() {
 		let dataDeNascimento = new Date(data.value)
 		let dataAtual = new Date()
 		
+		//data completa
+		nasc.innerHTML = `${data.value}`
+		
 		//meses vividos
 		let diferencaMeses = dataAtual - dataDeNascimento
 		let mesesVividos = Math.floor(diferencaMeses / (1000 * 60 * 60 * 24 * 30.44))
