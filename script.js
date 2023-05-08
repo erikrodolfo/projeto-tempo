@@ -1,5 +1,5 @@
+
 function calcTempo() {
-		
 		let input = document.getElementById('data')
 		let dataDeNascimento = new Date(data.value)
 		let dataAtual = new Date()
