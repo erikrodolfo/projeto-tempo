@@ -53,7 +53,7 @@ header > p {
 
 nav {
 	animation: navGradient 6s ease-in-out infinite alternate;
-	background: linear-gradient(90deg, var(--white), var(--lightred), var(--red));
+	background: linear-gradient(90deg, var(--white), var(--lightred), var(--lightred));
 	background-size: 300% 300%;
 	padding: 10px;
 }
@@ -85,9 +85,8 @@ nav {
 	display: inline-block;
 }
 
-#periodo {
-	display: inline-block;
-}
+
+/* Animações */
 
 @keyframes navGradient {
 	0% {
