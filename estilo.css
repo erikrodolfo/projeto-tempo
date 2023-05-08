@@ -5,8 +5,8 @@
 :root {
 	/* paleta de cores */
 	--lightred: #f64348;
-	--red: #BF0000;
-	--black01: #1b1b1b;
+	--red: #f4272c;
+	--black01: #131313;
 	--black02: #1f1f1f;
 	--gray: #343434;
 	--lightgray: #898989;
@@ -36,7 +36,6 @@ header {
 	background-color: var(--black01);
 	padding: 10px;
 	text-align: center;
-	
 }
 
 header > h1 {
