@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="estilo.css" type="text/css" media="all" />
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
  <script type="text/javascript" charset="utf-8" src="script.js"></script>
 	<title>Calculo do Tempo</title>
 </head>
@@ -34,16 +34,24 @@
  <div id="caixa">
  	<h2>RESULTADO</h2>
  	<h3>Desde o seu nascimento se já passaram:</h3>
-
- 	<p>Período</p>
+ 	<div class="p-t">
+<span class="material-symbols-outlined">
+calendar_today
+</span>
+ 	<p id="periodo">Período</p>
+ 	</div>
  		<ul class="res">
  			<li id="nasc"><!-- data de nascimento --></li>
  			<li id="mes"><!-- meses --></li>
  			<li id="sem"><!-- semanas --></li>
  			<li id="dia"><!-- dias --></li>
  		 </ul>
- 		 
- 	<p>Tempo</p>		
+ <div class="p-t">
+ <span class="material-symbols-outlined">
+ schedule
+</span>
+ 	<p id="tempo">Tempo</p>	
+ 	</div>
  	 <ul class="res">
  			<li id="hora"><!-- horas --></li>
  			<li id="min"><!-- minutos --></li>
