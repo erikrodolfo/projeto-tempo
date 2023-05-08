@@ -5,7 +5,7 @@
 :root {
 	/* paleta de cores */
 	--lightred: #f64348;
-	--red: #f4272c;
+	--red: #f3282e;
 	--black01: #131313;
 	--black02: #1f1f1f;
 	--gray: #343434;
@@ -52,7 +52,9 @@ header > p {
 }
 
 nav {
-	background-color: var(--lightred);
+	animation: navGradient 5s ease infinite;
+	background: linear-gradient(90deg, var(--white), var(--lightred), var(--red));
+	background-size: 200% 200%;
 	padding: 10px;
 }
 
@@ -74,6 +76,20 @@ nav {
 
 span {
 	color: var(--lightgray);
+}
+
+@keyframes navGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	
+	50% {
+		background-position: 100% 50%;
+	}
+	
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes arrow {
