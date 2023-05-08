@@ -9,7 +9,7 @@
 
 /* Configurações do corpo */
 body {
-	animation: gradient 7s ease-in-out infinite alternate;
+	animation: gradient 6s ease-in-out infinite alternate;
   background-image: linear-gradient(100deg, #aeffff 0, #78e6ff
 	25%, #0cc1ed 50%, #009dd4 75%, #007fc0 100%);
 	background-size: 300% 300%;
@@ -50,6 +50,7 @@ h1 {
 
 /* inputs & button */
 :disabled {
+	padding: 8px;
 	width: 39px;
 	border-radius: 0 0 0 10px;
 }
@@ -104,8 +105,15 @@ h3 {
 	border-bottom: 1px solid #020850;
 }
 
-#res {
-	margin: 10px;
+li {
+	list-style-type: none;
+	margin: 5px;
+}
+
+li:nth-child(odd) {
+	background-color: #020850;
+	color: #e6e6e6;
+	margin: 0;
 }
 
 footer {
