@@ -90,7 +90,7 @@ input {
 	font-family: var(--fonte-p);
 	text-align: center;
 	outline: none;
-	width: 155px;
+	width: 161px;
 	padding: 7px;
 	margin: 10px 20px 5px 20px;
 	border: 2px solid var(--lightred);
@@ -125,11 +125,11 @@ h2 {
 #caixa {
 	
 	margin: 0 40px 0 40px;
-	height: 97px;
+	height: 104px;
 }
 
 #caixa li:last-child {
-	border: none;
+	border: transparent;
 }
 
 #caixa2 {
@@ -214,17 +214,6 @@ footer {
 }
 
 @keyframes fundo {
-	0% {
-		background-color: var(--lightred);
-	}
-	
-	100% {
-		background-color: var(--white);
-		color: var(--lightred);
-	}
-}
-
-@keyframes button {
 	0% {
 		background-color: var(--lightred);
 	}
