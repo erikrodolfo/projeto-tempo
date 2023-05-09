@@ -58,7 +58,7 @@ header > p {
 
 #anim {
 	animation: navGradient 10s ease-in-out infinite alternate;
-	background: linear-gradient(90deg, var(--lightred), var(--lightred), var(--white));
+	background: linear-gradient(90deg, var(--lightred), var(--white));
 	background-size: 300% 300%;
 	padding: 3px;
 }
@@ -98,7 +98,7 @@ input {
 }
 
 button {
-	animation: button 5s ease infinite alternate;
+	animation: button 5s ease-in-out infinite alternate;
 	background-color: var(--lightred);
 	color: var(--white);
 	font-family: var(--fonte-p);
