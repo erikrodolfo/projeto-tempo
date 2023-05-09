@@ -32,6 +32,7 @@ body {
 	text-align: center;
 	height: 100vh;
 	width: 100vw;
+	position: relative;
 }
 
 /* Cabeçalho */
@@ -43,7 +44,7 @@ header {
 }
 
 header > h1 {
-	color: var(--lightred);
+	color: var(--white);
 	font-size: 1.4em;
 	font-weight: normal;
 	font-weight: bold;
@@ -83,13 +84,15 @@ header > p {
 }
 
 input {
-  animation: animacao-borda 3s ease-in-out infinite alternate;
+  animation: animacao-borda 5s ease-in-out infinite alternate;
 	background: none;
-	color: white;
+	color: var(--lightgray);
+	font-family: var(--fonte-p);
+	text-align: center;
 	outline: none;
-	overflow: hidden;
-	padding: 5px;
-	margin: 10px 20px 40px 20px;
+	width: 150px;
+	padding: 7px;
+	margin: 10px 20px 5px 20px;
 	border: 2px solid var(--lightred);
 	border-radius: 10px 0 10px 0;
 }
@@ -97,34 +100,53 @@ input {
 button {
 	background-color: var(--lightred);
 	color: var(--white);
+	font-family: var(--fonte-p);
+	margin: auto;
+	display: block;
 	border: none;
-	padding: 5px;
+	border-radius: 10px 0 10px 0;
+	padding: 7px;
 }
 
 /* Resultado */
 
 h2 {
+	margin-top: 50px;
 	font-size: 1.3em;
 	color: var(--lightgray);
 }
 
 #caixa {
 	
-	margin: 20px;
-	height: 238px;
+	margin: 0 40px 0 40px;
+	height: 97px;
 }
 
-.p-t {
+#caixa li:last-child {
+	border: none;
+}
+
+#caixa2 {
+	height: 97px;
+	margin: 0 40px 0 40px;
+}
+
+#periodo {
+	animation: fundo 5s ease-in-out infinite alternate;
 	background-color: var(--lightred);
 	display: flex;
+	margin-top: 10px;
+  width: 100%;
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
 }
 
-.p-t02 {
+#tempo {
+	animation: fundo 5s ease-in-out infinite alternate;
 	background-color: var(--lightred);
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
@@ -144,7 +166,14 @@ li {
 	border-bottom: 1px solid var(--lightgray);
 }
 
-
+footer {
+	background-color: var(--gray);
+	color: var(--lightred);
+	padding: 5px;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+}
 
 /* Animações */
 
@@ -170,12 +199,20 @@ li {
 
 @keyframes animacao-borda {
   0% {
-    border-color: var(--white);
-  }
-  50% {
     border-color: var(--lightred);
   }
   100% {
     border-color: var(--white);
   }
+}
+
+@keyframes fundo {
+	0% {
+		background-color: var(--lightred);
+	}
+	
+	100% {
+		background-color: var(--white);
+		color: var(--lightred);
+	}
 }
