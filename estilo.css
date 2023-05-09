@@ -6,7 +6,7 @@
 	/* paleta de cores */
 	--lightred: #f64348;
 	--red: #f3282e;
-	--black01: #131313;
+	--black01: #1d1d1d;
 	--black02: #1f1f1f;
 	--gray: #343434;
 	--lightgray: #898989;
@@ -16,6 +16,8 @@
 	--fonte-p: 'Josefin Sans', sans-serif;
 	--fonte-h: 'Staatliches', cursive;
 }
+
+/* Corpo em geral */
 
 * {
 	margin: 0;
@@ -31,6 +33,8 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
+
+/* Cabeçalho */
 
 header {
 	background-color: var(--black01);
@@ -51,12 +55,14 @@ header > p {
 	font-size: 14px;
 }
 
-nav {
-	animation: navGradient 6s ease-in-out infinite alternate;
+#anim {
+	animation: navGradient 4s ease-in-out infinite alternate;
 	background: linear-gradient(90deg, var(--white), var(--lightred), var(--lightred));
 	background-size: 300% 300%;
-	padding: 10px;
+	padding: 3px;
 }
+
+/* Conteúdo */
 
 #container {
 	margin-top: 30px;
@@ -68,10 +74,44 @@ nav {
 	margin: 0 10px 10px 10px;
 }
 
+/* Input e Button */
+
 #arrow {
 	animation: arrow 1s ease infinite alternate;
 	display: block;
 	margin: auto;
+}
+
+input {
+  animation: animacao-borda 3s ease-in-out infinite alternate;
+	background: none;
+	color: white;
+	outline: none;
+	overflow: hidden;
+	padding: 5px;
+	margin: 10px 20px 40px 20px;
+	border: 2px solid var(--lightred);
+	border-radius: 10px 0 10px 0;
+}
+
+button {
+	background-color: var(--lightred);
+	color: var(--white);
+	border: none;
+	padding: 5px;
+}
+
+/* Resultado */
+
+h2 {
+	font-size: 1.3em;
+	color: var(--lightgray);
+}
+
+#caixa {
+	
+	margin: 20px;
+	height: 238px;
 }
 
 .p-t {
@@ -79,11 +119,31 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-weight: bold;
+}
+
+.p-t02 {
+	background-color: var(--lightred);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
 }
 
 .material-symbols-outlined {
 	display: inline-block;
 }
+
+.res {
+	height: 93px;
+}
+
+li {
+	list-style-type: none;
+	padding: 8px;
+	border-bottom: 1px solid var(--lightgray);
+}
+
 
 
 /* Animações */
@@ -106,4 +166,16 @@ nav {
 	0% {
 		transform: translateY(12px);
 	}
+}
+
+@keyframes animacao-borda {
+  0% {
+    border-color: var(--white);
+  }
+  50% {
+    border-color: var(--lightred);
+  }
+  100% {
+    border-color: var(--white);
+  }
 }
