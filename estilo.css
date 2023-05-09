@@ -57,7 +57,7 @@ header > p {
 }
 
 #anim {
-	animation: navGradient 4s ease-in-out infinite alternate;
+	animation: navGradient 5s ease-in-out infinite alternate;
 	background: linear-gradient(90deg, var(--white), var(--lightred), var(--lightred));
 	background-size: 300% 300%;
 	padding: 3px;
