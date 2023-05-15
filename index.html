@@ -20,53 +20,59 @@
 		</div>
 		<!-- Conteúdo principal -->
 		<main>
-	<section id="container">
-		<label>Selecione a data e a hora do seu nascimento</label>
-		<p id="aviso">
-			Caso não saiba a hora, coloque 00:00 que o resultado será o numero inteiro mais próximo
-		</p>
-		<img id="arrow" src="imagens/down-arrow-backup-2-svgrepo-com.svg" alt="Down arrow" width="30"/>
-		<!-- input e button -->
-	<input type="datetime-local" name="data" id="data"/>
- <button id="enviar" onclick="calcTempo()">Enviar</button>
- 
-	</section>
-	<section id="subtitle">
-		<h2>RESULTADO</h2>
- 	<p>Desde o seu nascimento se já passaram:</p>
-	</section>
+			<div class="formulario">
+				<section id="container">
+					<label>Selecione a data e a hora do seu nascimento</label>
+					<p id="aviso">
+					Caso não saiba a hora, coloque 00:00 que o resultado será o numero inteiro mais próximo
+				  </p>
+					<img id="arrow" src="imagens/down-arrow-backup-2-svgrepo-com.svg" alt="Down arrow" width="30"/>
+						<!-- input e button -->
+					<input type="datetime-local" name="data" id="data"/>
+ 					<button id="enviar" onclick="calcTempo()">Enviar</button>
+				</section>
+			</div>
+			<div class="resultado">
+					<section id="subtitle">
+						<h2>RESULTADO</h2>
+ 						<p>Desde o seu nascimento se já passaram:</p>
+					</section>
 	<!-- Resultado -->
  
  	<!-- Período -->
- 	<div id="periodo">
-<span class="material-symbols-outlined">
-calendar_today
-</span>
- 	<p>Período</p>
- 	</div>
- 	<div id="caixa">
- 		<ul class="res">
- 		<!--	<li id="nasc"> data de nascimento </li> -->
- 			<li id="mes">Meses</li>
- 			<li id="sem">Semanas</li>
- 			<li id="dia">Dias</li>
- 		 </ul>
- 	</div>
- 	<!-- Tempo -->	 
- <div id="tempo">
- <span class="material-symbols-outlined">
- schedule
-</span>
- 	<p>Tempo</p>	
- 	</div>
- 	<div id="caixa2">
- 	 <ul class="res">
- 			<li id="hora">Horas</li>
- 			<li id="min">Minutos</li>
- 			<li id="seg">Segundos</li>
- 		</ul>
- 	</div>
+ 					<div id="periodo">
+						<span class="material-symbols-outlined">
+						calendar_today
+						</span>
+					 	<p>Período</p>
+ 					</div>
+ 					<div id="caixa">
+			 			<ul class="res">
+			 		<!--	<li id="nasc"> data de nascimento </li> -->
+				 			<li id="mes">Meses</li>
+				 			<li id="sem">Semanas</li>
+				 			<li id="dia">Dias</li>
+			 		  </ul>
+			 		</div>
+					 	<!-- Tempo -->	 
+					<div id="tempo">
+					  <span class="material-symbols-outlined">
+					 	schedule
+						</span>
+					 	<p>Tempo</p>	
+					</div>
+				 	<div id="caixa2">
+				 	 <ul class="res">
+				 			<li id="hora">Horas</li>
+				 			<li id="min">Minutos</li>
+				 			<li id="seg">Segundos</li>
+				 		</ul>
+				 	</div>
+			</div>
 </main>
+<footer>
+				<p>&copy; Erik Rodolfo - 2023</p>
+	</footer>
 	 <script type="text/javascript" charset="utf-8" src="script.js"></script>
 </body>
 </html>
