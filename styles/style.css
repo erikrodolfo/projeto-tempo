@@ -109,6 +109,10 @@ button {
 }
 
 button:hover {
+	background-color: var(--red);
+}
+
+button:active {
 	background-color: var(--white);
 	color: var(--lightred);
 }
