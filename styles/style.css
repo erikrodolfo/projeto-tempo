@@ -56,7 +56,7 @@ header > p {
 }
 
 #anim {
-	animation: navGradient 10s ease-in-out infinite alternate;
+	animation: navGradient 8s ease-in-out infinite alternate;
 	background: linear-gradient(90deg, var(--lightred), var(--white));
 	background-size: 300% 300%;
 	padding: 3px;
@@ -83,7 +83,7 @@ header > p {
 }
 
 input {
-  animation: animacao-borda 5s ease-in-out infinite alternate;
+  animation: animacao-borda 4s ease-in-out infinite alternate;
 	background: none;
 	color: var(--lightgray);
 	font-family: var(--fonte-p);
@@ -106,10 +106,6 @@ button {
 	border: none;
 	border-radius: 10px 0 10px 0;
 	padding: 7px;
-}
-
-button:hover {
-	background-color: var(--red);
 }
 
 button:active {
@@ -141,7 +137,7 @@ h2 {
 }
 
 #periodo {
-	animation: fundo 5s ease-in-out infinite alternate;
+	animation: fundo 4s ease-in-out infinite alternate;
 	background-color: var(--lightred);
 	display: flex;
 	margin-top: 10px;
@@ -152,7 +148,7 @@ h2 {
 }
 
 #tempo {
-	animation: fundo 5s ease-in-out infinite alternate;
+	animation: fundo 4s ease-in-out infinite alternate;
 	background-color: var(--lightred);
 	display: flex;
 	width: 100%;
