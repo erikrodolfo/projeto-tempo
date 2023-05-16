@@ -1,11 +1,75 @@
 @media screen and (min-width: 800px) {
+	
+	header > h1 {
+		font-size: 1.7em;
+	}
+	
+	header > p {
+		font-size: 1em;
+	}
+	
 	main {
 		display: grid;
 		grid-template-columns:  repeat(2, 1fr);
 	  grid-template-rows: auto;
+	  grid-template-areas:
+	  "form clip"
+	  "resultado resultado"
+	  ;
 	}
 	
 	h2 {
 		margin-top: 30px;
+	}
+	
+	.formulario {
+		grid-area: form;
+	}
+	
+	.clip {
+		grid-area: clip;
+	}
+	
+	.resultado {
+		margin-bottom: 20px;
+		grid-area: resultado;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"subtitle subtitle"
+		"periodo tempo"
+		"caixa caixa2"
+		;
+	}
+	
+	section#subtitle {
+		grid-area: subtitle;
+	}
+	
+	div#periodo {
+		grid-area: periodo;
+		margin: 0;
+		padding: 0;
+	}
+	
+	div#tempo {
+		grid-area: tempo;
+		margin: 0;
+		padding: 0;
+	}
+	
+	div#caixa {
+		grid-area: caixa;
+		height: auto;
+	}
+	
+	div#caixa2 {
+		grid-area: caixa2;
+		height: auto;
+	}
+	
+	#caixa2  li:last-child {
+		border: none;
 	}
 }
