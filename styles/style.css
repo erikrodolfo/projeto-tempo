@@ -29,6 +29,7 @@ body {
 	background: var(--black02) no-repeat;
 	color: var(--white);
 	font-family: var(--fonte-p);
+	position: relative;
 	text-align: center;
 	height: 100vh;
 	width: 100vw;
@@ -177,7 +178,8 @@ footer {
 	color: var(--lightred);
 	padding: 5px;
 	width: 100%;
-	align-self: end;
+	position: absolute;
+	top: 100%;
 }
 
 /* Animações */
