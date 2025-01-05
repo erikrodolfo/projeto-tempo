@@ -87,4 +87,8 @@
 	#caixa2  li:last-child {
 		border: none;
 	}
+
+	footer {
+		padding: 5px;
+	}
 }
