@@ -1,4 +1,8 @@
 @media screen and (min-width: 800px) {
+
+	html, body {
+		height: 100%;
+	}
 	
 	header > h1 {
 		font-size: 1.7em;
@@ -6,6 +10,10 @@
 	
 	header > p {
 		font-size: 1em;
+	}
+
+	#content {
+		flex-grow: 1;
 	}
 	
 	main {
@@ -16,14 +24,24 @@
 	  "form clip"
 	  "resultado resultado"
 	  ;
+	  
 	}
 	
 	h2 {
 		margin-top: 30px;
 	}
+
+	#wrapp {
+		border: 1px solid red;
+		height: 100vh;
+		width: 100vw;
+	}
 	
 	.formulario {
+		display: block;
 		grid-area: form;
+		border: 1px solid red;
+		margin-bottom: 20px;
 	}
 	
 	.clip {
@@ -31,8 +49,10 @@
 	}
 	
 	.resultado {
-		margin-bottom: 20px;
+		width: 100vw;
+		border: 1px solid red;
 		grid-area: resultado;
+		display: block;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;

@@ -29,11 +29,27 @@ html, body {
 	background: var(--black02) no-repeat;
 	color: var(--white);
 	font-family: var(--fonte-p);
-	position: relative;
 	text-align: center;
-	height: 100%;
-	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garante 100% da altura */
+    display: flex;
+    flex-direction: column;
+	
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+	
 }
+
+#content {
+	flex: 1;
+}
+
 
 /* Cabeçalho */
 
@@ -55,6 +71,11 @@ header > p {
 	color: var(--lightgray);
 	font-size: 14px;
 }
+
+main {
+	flex: 1;
+}
+
 
 #anim {
 	animation: navGradient 8s ease-in-out infinite alternate;
@@ -116,9 +137,9 @@ button:active {
 
 /* Resultado */
 
-div.resultado {
-  padding-bottom: 10px; 
-}
+
+
+
 
 h2 {
 	margin-top: 50px;
@@ -178,12 +199,12 @@ li {
 }
 
 footer {
-	background-color: var(--gray);
-	color: var(--lightred);
-	padding: 5px;
-	width: 100%;
-	position: absolute;
-	top: 100vh;
+	
+		background-color: var(--gray);
+		color: var(--lightred);
+		text-align: center;
+		padding: 10px;
+		margin-top: auto; /* Empurra o footer para o final */
 }
 
 /* Animações */

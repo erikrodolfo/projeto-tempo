@@ -10,71 +10,79 @@
 	<title>Calculo do Tempo</title>
 </head>
 <body>
-	  	<!-- Cabeçalho -->
-		<header>
-			<h1>QUANTO TEMPO VOCÊ JÁ VIVEU?</h1>
-			<p>
-				<small>Descubra quantos meses, semanas, dias, horas, minutos e segundos você já viveu até agora</small>
-			</p>
-		</header>
-		<div id="anim">
-			<!-- Animação -->
+			<!-- Cabeçalho -->
+					<header>
+						<h1>QUANTO TEMPO VOCÊ JÁ VIVEU?</h1>
+						<p>
+							<small>Descubra quantos meses, semanas, dias, horas, minutos e segundos você já viveu até agora</small>
+						</p>
+					</header>
+					<div id="anim">
+						<!-- Animação -->
+					</div>
+					<div id="content">
+						<!-- Conteúdo principal -->
+					<main>
+							<div id="wrapp">
+								<div id="cont-01">
+									<div class="formulario">
+										<section id="container">
+											<label>Selecione a data e a hora do seu nascimento</label>
+											<p id="aviso">
+												Caso não saiba a hora, coloque 00:00 que o resultado será o numero inteiro mais próximo
+										  </p>
+											<img id="arrow" src="imagens/down-arrow-backup-2-svgrepo-com.svg" alt="Down arrow" width="30"/>
+												<!-- input e button -->
+											<input type="datetime-local" name="data" id="data"/>
+														<button id="enviar" onclick="calcTempo()">Enviar</button>
+										</section>
+									</div>
+								</div>
+											<div class="clip">
+								
+											</div>
+								<div id="cont-02">
+									<div class="resultado">
+										<section id="subtitle">
+											<h2>RESULTADO</h2>
+														<p>Desde o seu nascimento se já passaram:</p>
+										</section>
+											<!-- Resultado -->
+									
+														<!-- Período -->
+													<div id="periodo">
+											<span class="material-symbols-outlined">
+											calendar_today
+											</span>
+											<p>Período</p>
+														</div>
+													<div id="caixa">
+											<ul class="res">
+												<!--	<li id="nasc"> data de nascimento </li> -->
+												<li id="mes">Meses</li>
+												<li id="sem">Semanas</li>
+												<li id="dia">Dias</li>
+											 </ul>
+										</div>
+												<!-- Tempo -->
+										<div id="tempo">
+											 <span class="material-symbols-outlined">
+											 schedule
+											</span>
+											 <p>Tempo</p>
+										</div>
+										 <div id="caixa2">
+											<ul class="res">
+												<li id="hora">Horas</li>
+												<li id="min">Minutos</li>
+												<li id="seg">Segundos</li>
+											</ul>
+										 </div>
+									</div>
+								</div>
+							</div>
+			  </main>
 		</div>
-			<!-- Conteúdo principal -->
-		<main>
-			<div class="formulario">
-				<section id="container">
-					<label>Selecione a data e a hora do seu nascimento</label>
-					<p id="aviso">
-						Caso não saiba a hora, coloque 00:00 que o resultado será o numero inteiro mais próximo
-				  </p>
-					<img id="arrow" src="imagens/down-arrow-backup-2-svgrepo-com.svg" alt="Down arrow" width="30"/>
-						<!-- input e button -->
-					<input type="datetime-local" name="data" id="data"/>
- 					<button id="enviar" onclick="calcTempo()">Enviar</button>
-				</section>
-			</div>
-			<div class="clip">
-				
-			</div>
-			<div class="resultado">
-				<section id="subtitle">
-					<h2>RESULTADO</h2>
- 					<p>Desde o seu nascimento se já passaram:</p>
-				</section>
-					<!-- Resultado -->
- 
- 					<!-- Período -->
- 				<div id="periodo">
-					<span class="material-symbols-outlined">
-					calendar_today
-					</span>
-				 	<p>Período</p>
- 					</div>
- 				<div id="caixa">
-			 		<ul class="res">
-			 			<!--	<li id="nasc"> data de nascimento </li> -->
-				 		<li id="mes">Meses</li>
-				 		<li id="sem">Semanas</li>
-				 		<li id="dia">Dias</li>
-			 		 </ul>
-			 	</div>
-					 	<!-- Tempo -->	 
-				<div id="tempo">
-					 <span class="material-symbols-outlined">
-					 schedule
-					</span>
-					 <p>Tempo</p>	
-				</div>
-				 <div id="caixa2">
-				 	<ul class="res">
-				 		<li id="hora">Horas</li>
-				 		<li id="min">Minutos</li>
-				 		<li id="seg">Segundos</li>
-				 	</ul>
-				 </div>
-			</div>
-  </main>
 	<footer>
 		<p>&copy; 2023 Erik Rodolfo. Todos os direitos reservados.</p>
 	</footer>
