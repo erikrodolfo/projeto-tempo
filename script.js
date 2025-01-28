@@ -3,6 +3,11 @@ function calcTempo() {
 		let input = document.getElementById('data')
 		let dataDeNascimento = new Date(data.value)
 		let dataAtual = new Date()
+
+		if(input.value == '') {
+			document.getElementById('erro').innerHTML = "Dados inválidos ou em branco!"
+		}
+}
 		
 		//data completa
 		//nasc.innerHTML = `${data.value}`
@@ -50,4 +55,3 @@ function calcTempo() {
 			*/
 		
 		setInterval(calcTempo, 1000)
-	}

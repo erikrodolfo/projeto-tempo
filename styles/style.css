@@ -29,6 +29,7 @@ html, body {
 	background: var(--black02) no-repeat;
 	color: var(--white);
 	font-family: var(--fonte-p);
+	font-size: 1em;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -130,9 +131,19 @@ button {
 	padding: 7px;
 }
 
+button:hover {
+	background-color: var(--white);
+	color: var(--lightred);
+}
+
 button:active {
 	background-color: var(--white);
 	color: var(--lightred);
+}
+
+#erro {
+	margin-top: 10px;
+	color: var(--red);
 }
 
 /* Resultado */
