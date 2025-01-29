@@ -30,15 +30,14 @@
 				<div id="cont-01">
 					<div class="formulario">
 						<section id="container">
-							<label>Selecione a data e a hora do seu nascimento</label>
+							<label>Selecione sua data de nascimento</label>
 							<p id="aviso">
-								Caso não saiba a hora, coloque 00:00 que o resultado será o numero inteiro mais próximo
+								O resultado será o numero inteiro mais próximo
 							</p>
 							<img id="arrow" src="imagens/down-arrow-backup-2-svgrepo-com.svg" alt="Down arrow"
 								width="30" />
 							<!-- input e button -->
-							<input type="datetime-local" name="data" id="data" 
-							required />
+							<input type="date" name="data" id="data" required/>
 							<button id="enviar" onclick="calcTempo()">Enviar</button>
 						</section>
 						<div id="erro">

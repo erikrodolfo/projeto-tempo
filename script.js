@@ -3,55 +3,50 @@ function calcTempo() {
 		let input = document.getElementById('data')
 		let dataDeNascimento = new Date(data.value)
 		let dataAtual = new Date()
+		let erro = document.getElementById('erro')
 
-		if(input.value == '') {
-			document.getElementById('erro').innerHTML = "Dados inválidos ou em branco!"
+		if (!input.value) {
+			erro.innerHTML = "Por favor, insira uma data."
+			return
 		}
-}
+
+		if (dataDeNascimento > dataAtual) {
+			erro.innerHTML = "A data não pode ser maior que a atual."
+			return
+		}
+
+		erro.innerHTML = ''
+
+		let diferenca = dataAtual - dataDeNascimento
+
 		
-		//data completa
-		//nasc.innerHTML = `${data.value}`
+		let mesesVividos = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 30.44));
+    	let semanasVividas = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 7));
+    	let diasVividos = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    	let horasVividas = Math.floor(diferenca / (1000 * 60 * 60));
+    	let minutosVividos = Math.floor(diferenca / (1000 * 60));
+    	let segundosVividos = Math.floor(diferenca / 1000);
+		
 		
 		//meses vividos
-		let diferencaMeses = dataAtual - dataDeNascimento
-		let mesesVividos = Math.floor(diferencaMeses / (1000 * 60 * 60 * 24 * 30.44))
-		mes.innerHTML = `${mesesVividos.toLocaleString()} Meses`
+		document.getElementById('mes').innerHTML = `${mesesVividos.toLocaleString()} Meses`
 		
-		//semanas vividas
-		let diferencaSem = dataAtual - dataDeNascimento
-		let semanasVividas = Math.floor(diferencaSem / (1000 * 60 * 60 * 24 * 7))
-		sem.innerHTML = `${semanasVividas.toLocaleString()} Semanas`
+		document.getElementById('sem').innerHTML = `${semanasVividas.toLocaleString()} Semanas`
 		
 		//dias vividos
-		let diferencaDias = dataAtual - dataDeNascimento
-		let diasVividos = Math.floor(diferencaDias / (1000 * 60 * 60 * 24))
-		dia.innerHTML = `${diasVividos.toLocaleString()} Dias`
+		document.getElementById('dia').innerHTML = `${diasVividos.toLocaleString()} Dias`
 		
 		//horas vividas
-		let diferencaHoras = dataAtual.getTime() - dataDeNascimento.getTime()
-		let horasVividas = Math.floor(diferencaHoras / (1000 * 60 * 60))
-		hora.innerHTML = `${horasVividas.toLocaleString()} Horas`
+		document.getElementById('hora').innerHTML = `${horasVividas.toLocaleString()} Horas`
 		
 		//minutos vividos
-		let diferencaMin = dataAtual.getTime() - dataDeNascimento.getTime()
-		let minutosVividos = Math.floor(diferencaMin / (1000 * 60))
-		min.innerHTML = `${minutosVividos.toLocaleString()} Minutos`
+		document.getElementById('min').innerHTML = `${minutosVividos.toLocaleString()} Minutos`
 		
 		//segundos vividos
-		let diferencaSeg = dataAtual.getTime() - dataDeNascimento.getTime()
-		let segundosVividos = Math.floor(diferencaSeg / (1000))
-		seg.innerHTML = `${segundosVividos.toLocaleString()} Segundos`
+		document.getElementById('seg').innerHTML = `${segundosVividos.toLocaleString()} Segundos`
 		console.log(segundosVividos)
-		/*
-		res.innerHTML = 
-		`<strong>
-		  ${mesesVividos.toLocaleString()} Meses<br>
-		  ${semanasVividas.toLocaleString()} semanas<br>
-			${diasVividos.toLocaleString()} dias<br> 
-			${horasVividas.toLocaleString()} horas<br> 
-			${minutosVividos.toLocaleString()} minutos<br> 
-			${segundosVividos.toLocaleString()} segundos
-			</strong>`
-			*/
-		
+
 		setInterval(calcTempo, 1000)
+	}
+		
+	
