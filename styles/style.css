@@ -133,7 +133,8 @@ button {
 
 button:hover {
 	background-color: var(--white);
-	color: var(--lightred);
+	color: var(--red);
+	transition: 0.4s;
 }
 
 button:active {
@@ -144,6 +145,7 @@ button:active {
 #erro {
 	margin-top: 15px;
 	color: var(--lightred);
+	
 }
 
 /* Resultado */
