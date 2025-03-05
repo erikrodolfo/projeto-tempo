@@ -77,7 +77,6 @@ main {
 	flex: 1;
 }
 
-
 #anim {
 	animation: navGradient 8s ease-in-out infinite alternate;
 	background: linear-gradient(90deg, var(--lightred), var(--white));
@@ -145,7 +144,6 @@ button:active {
 #erro {
 	margin-top: 15px;
 	color: var(--lightred);
-	
 }
 
 /* Resultado */
