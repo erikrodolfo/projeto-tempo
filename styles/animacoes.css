@@ -1,0 +1,41 @@
+/* Animações */
+
+@keyframes navGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	
+	50% {
+		background-position: 100% 50%;
+	}
+	
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateY(12px);
+	}
+}
+
+@keyframes animacao-borda {
+  0% {
+    border-color: var(--lightred);
+  }
+  100% {
+    border-color: var(--white);
+  }
+}
+
+@keyframes fundo {
+	0% {
+		background-color: var(--lightred);
+	}
+	
+	100% {
+		background-color: var(--white);
+		color: var(--lightred);
+	}
+}

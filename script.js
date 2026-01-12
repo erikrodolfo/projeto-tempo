@@ -48,5 +48,8 @@ function calcTempo() {
 
 		setInterval(calcTempo, 1000)
 	}
-		
+
+	let ano = document.getElementById("time")
+	let anoAtual = new Date().getFullYear()
+	ano.textContent = anoAtual
 	
